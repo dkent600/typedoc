@@ -91,9 +91,6 @@ export class PluginHost extends AbstractComponent<Application> {
     function discoverModules(basePath: string) {
       FS.readdirSync(basePath).forEach((name) => {
         const dir = Path.join(basePath, name);
-        if (name[0] === '@') {
-          discoverModules(dir);
-        }
         const infoFile = Path.join(dir, 'package.json');
         if (!FS.existsSync(infoFile)) {
           return;

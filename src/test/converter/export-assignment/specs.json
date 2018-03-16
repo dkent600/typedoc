@@ -1,6 +1,6 @@
 {
   "id": 0,
-  "name": "typedoc",
+  "name": "@daostack/typedoc",
   "kind": 0,
   "flags": {},
   "children": [
